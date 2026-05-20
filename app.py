@@ -9,11 +9,11 @@ try:
     df = pd.read_csv("datos_examen.csv")
 except FileNotFoundError:
     st.error(
-        "❌ No se encontró el archivo 'datos_examen.csv'. Asegúrate de subirlo o crearlo."
+        "No se encontró el archivo 'datos_examen.csv'. Asegúrate de subirlo o crearlo."
     )
     st.stop()
 
-st.title("📊 Análisis Estadístico del Examen")
+st.title("Análisis Estadístico del Examen")
 st.markdown("---")
 
 st.header("1. Medidas de Tendencia Central")
